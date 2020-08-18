@@ -48,7 +48,7 @@ const Counter = (props) => {
 const App = (props) => {
   return (
     <div className="scoreboard">
-      <Header title="Scoreboard" totalPlayers={1} />
+      <Header title="Scoreboard" totalPlayers={props.intialPlayers.length} />
       {/*player list*/}
       {props.intialPlayers.map((player) => (
         <Player name={player.name} score={player.score} />

@@ -56,7 +56,7 @@ class Counter extends React.Component {
         <span className="counter-score">{this.state.score}</span>
         <boutton
           className="counter-action increment"
-          onClick={this.incrementScore}
+          onClick={() => this.incrementScore()}
         >
           +
         </boutton>
